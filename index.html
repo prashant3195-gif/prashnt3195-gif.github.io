@@ -67,19 +67,27 @@
                 
 
 
-<form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html">
-  <input type="hidden" name="form-name" value="contact" />
+<form
+  action="https://formspree.io/f/xyklbgod"
+  method="POST"
+>
 
-  <p class="hidden">
-    <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
-  </p>
+  <input type="text" name="name" placeholder="Your Name" required>
 
-  <input type="text" name="name" placeholder="Your Name" required />
-  <input type="email" name="email" placeholder="Your Email" required />
-  <textarea name="message" placeholder="Your Message" required></textarea>
+  <input type="email" name="email" placeholder="Your Email" required>
+
+  <textarea name="message" placeholder="Your Enquiry" required></textarea>
+
+  <!-- Redirect after success -->
+  <input type="hidden" name="_next" value="https://prashnt3195-gif.github.io/thank-you.html">
+
+  <!-- Disable spam -->
+  <input type="hidden" name="_captcha" value="false">
 
   <button type="submit">Send Enquiry</button>
+
 </form>
+
 
 
 
